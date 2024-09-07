@@ -1,49 +1,45 @@
-# **SPLITX\_GoogleSheetsFunction**
+# Complemento de Google Sheets: SPLITX
 
-**SPLITX\_GoogleSheetsFunction** es una función personalizada para Google Sheets diseñada para dividir texto en celdas adyacentes utilizando uno o múltiples delimitadores. Puedes utilizarla para dividir el contenido en filas o columnas de acuerdo con las necesidades del usuario.
+Este repositorio contiene un script de Google Apps Script que proporciona una función personalizada llamada `SPLITX` para Google Sheets. Esta función permite dividir texto en celdas adyacentes usando uno o varios delimitadores y puede distribuir los resultados en filas o columnas.
 
-## **Características**
+### Funcionalidad
 
-* **División de texto:** Divide texto en celdas adyacentes utilizando hasta tres delimitadores diferentes.  
-* **Compatibilidad con filas y columnas:** Los resultados se pueden distribuir tanto en filas como en columnas, dependiendo de los parámetros proporcionados.  
-* **Soporte para múltiples delimitadores:** Utiliza uno, dos o tres delimitadores para separar el texto de manera más eficiente.
+- **Función `SPLITX`**: Divide el texto en celdas adyacentes utilizando uno o múltiples delimitadores especificados.
+  - **Parámetros**:
+    - `texto` (string): El texto que se va a dividir.
+    - `direccion` (número): 0 para filas, 1 para columnas.
+    - `delimitador1` (string): El primer delimitador.
+    - `delimitador2` (string, opcional): El segundo delimitador.
+    - `delimitador3` (string, opcional): El tercer delimitador.
+  - **Uso**: `=SPLITX(texto, direccion, delimitador1, [delimitador2], [delimitador3])`
 
-## **Instalación**
+### Cómo Usar el Script
 
-Para utilizar **SPLITX\_GoogleSheetsFunction**, sigue los siguientes pasos:
+1. **Copiar el Código en Google Apps Script**:
+   - Abre tu hoja de cálculo en Google Sheets.
+   - Ve a `Extensiones` -> `Apps Script`.
+   - Elimina cualquier código en el editor y copia el contenido del archivo `Código.gs` del repositorio en el editor.
 
-1. Abre un documento de Google Sheets.  
-2. Dirígete a **Extensiones** \> **Apps Script**.  
-3. Copia y pega el código de la función **SPLITX** en el editor de Apps Script.  
-4. Guarda el proyecto y cierra el editor.
+2. **Guardar y Ejecutar**:
+   - Guarda el proyecto con un nombre relevante.
+   - Cierra el editor de Google Apps Script.
 
-## **Uso**
+3. **Utilizar la Función `SPLITX` en Google Sheets**:
+   - En cualquier celda de tu hoja de cálculo, ingresa la fórmula `=SPLITX("texto_a_dividir", direccion, "delimitador1", "delimitador2", "delimitador3")` según necesites.
+   - Ejemplo: `=SPLITX(A1, 0, ",")` dividirá el contenido de la celda A1 en filas usando la coma como delimitador.
 
-Para utilizar la función, sigue la siguiente sintaxis:
+### Función Adicional
 
-`=SPLITX(texto, direccion, delimitador1, [delimitador2], [delimitador3])`
+- **Menú Personalizado**: Al abrir la hoja de cálculo, se añadirá un menú personalizado llamado "Menú Personalizado" con una opción para ver información sobre la función `SPLITX`.
 
-### **Parámetros**
+### Manual en PDF
 
-* `texto`: El texto que deseas dividir.  
-* `direccion`: Define si el resultado se debe mostrar en filas o columnas. Usa `0` para filas y `1` para columnas.  
-* `delimitador1`: El primer delimitador que separa el texto.  
-* `delimitador2` (opcional): Un segundo delimitador adicional.  
-* `delimitador3` (opcional): Un tercer delimitador adicional.
+Para una guía detallada con imágenes, consulta el [Manual en PDF](URL_DEL_MANUAL_PDF). Este manual proporciona instrucciones paso a paso para copiar y usar el código en Google Sheets.
 
-### **Ejemplo de Uso**
+### Contribuciones
 
-Si tienes el texto "Manzana, Plátano; Uva \- Melón" y deseas dividirlo utilizando los delimitadores `,`, `;` y `-`, puedes usar la función de la siguiente manera:
+Si encuentras algún problema o tienes sugerencias, no dudes en abrir un **Issue** en el repositorio.
 
-`=SPLITX("Manzana, Plátano; Uva - Melón", 0, ",", ";", "-")`
+### Licencia
 
-Esto dividirá el texto en celdas adyacentes en la misma fila.
-
-## **Contribuciones**
-
-Este complemento fue creado por el creador de **SPLITX\_GoogleSheetsFunction**. Si tienes sugerencias o mejoras, puedes contribuir abriendo un *issue* o haciendo un *pull request* en el repositorio.
-
-## **Contacto**
-
-Si tienes alguna pregunta o necesitas soporte, puedes contactar al creador en **danielraxai@gmail.com**.
-
+Este proyecto está bajo la Licencia [MIT](LICENSE).
