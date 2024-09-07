@@ -34,7 +34,7 @@ Este repositorio contiene un script de Google Apps Script que proporciona una fu
 
 ### Manual en PDF
 
-Para una guía detallada con imágenes, consulta el [Manual en PDF](URL_DEL_MANUAL_PDF). Este manual proporciona instrucciones paso a paso para copiar y usar el código en Google Sheets.
+Para una guía detallada con imágenes, consulta el [Guía Rápida en PDF](https://github.com/danraxai/SPLITX_GoogleSheetsScript/blob/main/Gu%C3%ADa%20R%C3%A1pida-SPLITX_Script.pdf). Este manual proporciona instrucciones paso a paso para copiar y usar el código en Google Sheets.
 
 ### Contribuciones
 
