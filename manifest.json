@@ -1,0 +1,25 @@
+{
+  "timeZone": "America/Montevideo",
+  "dependencies": {},
+  "exceptionLogging": "STACKDRIVER",
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/spreadsheets",
+    "https://www.googleapis.com/auth/script.external_request"
+  ],
+  "runtimeVersion": "V8",
+  "addOns": {
+    "common": {
+      "name": "SPLITX-GoogleSheetsFunction",
+      "logoUrl": "https://drive.google.com/file/d/1y4_0HjV7g0bGAYd4tKOvJOszkVQ9HjK9/view?usp=sharing",
+      "layoutProperties": {
+        "primaryColor": "#4285F4",
+        "secondaryColor": "#4285F4"
+      }
+    },
+    "sheets": {
+      "homepageTrigger": {
+        "runFunction": "onOpen"
+      }
+    }
+  }
+}
