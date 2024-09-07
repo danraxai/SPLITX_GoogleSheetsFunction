@@ -26,4 +26,4 @@ El creador de este script se reserva el derecho de modificar esta política de p
 
 ### 6. Contacto
 
-Si tiene alguna pregunta sobre la política de privacidad, puede contactar al creador de este script a través de la [página de Issues en GitHub](https://github.com/tu-usuario/tu-repositorio/issues).
+Si tiene alguna pregunta sobre la política de privacidad, puede contactar al creador de este script a través de la [página de Issues en GitHub](https://github.com/danraxai/SPLITX_GoogleSheetsScript/issues).
